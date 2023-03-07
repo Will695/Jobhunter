@@ -129,7 +129,7 @@ def matchskills(url,skillset):
 jobcount = len(temp['url'])
 for i in range(len(temp['url'])):
     print(f'{i} out of {jobcount}')
-    matchskills(temp['url'][i])
+    matchskills(temp['url'][i],skillset)
 
 
 temp['ir35'] = temp['ir35'].fillna('none')
