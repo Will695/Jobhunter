@@ -21,7 +21,7 @@ keywords = ['wintel','infrastructure engineer','wintel engineer','windows server
 matchcount = 4
 filterdate = '2023-03-05'
 
-
+######### don't change anything below ########
 baseurl = 'https://jobserve.com'
 
 for keyword in keywords:
@@ -150,6 +150,6 @@ res.index = range(len(res['date']))
 
 res = res[res['date'].astype(str) > filterdate]
 
-
+#### This bit opens the webpages, you can comment this bit out and send it to a csv if needed
 for i in range(len(res['realurl'])):
     webbrowser.open(res['realurl'][i])
